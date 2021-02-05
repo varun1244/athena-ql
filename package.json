@@ -1,0 +1,11 @@
+{
+  "name": "athena-ql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/varun1244/athena-ql.git",
+  "author": "Varun Agarwal <varun@xfers.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
