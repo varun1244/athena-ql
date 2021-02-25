@@ -1,11 +1,11 @@
 {
-  "name": "@athena-ql/core",
+  "name": "@athena-ql/schema",
   "version": "1.0.0",
-  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "description": "Schema manager for Athena",
   "keywords": [],
   "author": "Varun Agarwal <varun@xfers.com>",
   "license": "ISC",
-  "main": "lib/core.js",
+  "main": "lib/schema.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -22,11 +22,22 @@
   },
   "scripts": {
     "tsc": "tsc",
-    "dev": "ts-node src/core.ts",
+    "dev": "ts-node src/schema.ts",
+    "graphql": "graphql-mesh --dir src/config serve",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/varun1244/athena-ql/issues"
   },
-  "homepage": "https://github.com/varun1244/athena-ql#readme"
+  "homepage": "https://github.com/varun1244/athena-ql#readme",
+  "dependencies": {
+    "@graphql-mesh/config": "^0.12.3",
+    "@graphql-mesh/openapi": "^0.12.7",
+    "@graphql-mesh/runtime": "^0.10.23",
+    "graphql": "^15.5.0"
+  },
+  "devDependencies": {
+    "@graphql-mesh/cli": "^0.20.0",
+    "ts-node": "^9.1.1"
+  }
 }
