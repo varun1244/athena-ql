@@ -5,9 +5,19 @@
   "repository": "https://github.com/varun1244/athena-ql.git",
   "author": "Varun Agarwal <varun@xfers.com>",
   "license": "MIT",
+  "private": "true",
+  "dependencies": {
+    "graphql": "^15.5.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
+    "@types/jest": "^26.0.23",
     "@types/node": "^14.14.25",
+    "jest": "^26.6.3",
     "lerna": "^3.22.1",
+    "ts-jest": "^26.5.6",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   },

@@ -1,0 +1,41 @@
+{
+  "definitions": {
+    "User": {
+      "type": "object",
+      "title": "User",
+      "description": "Fake User Object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        }
+      }
+    },
+    "Company": {
+      "type": "object",
+      "title": "Company",
+      "description": "Fake Company",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "User.ID"
+        }
+      }
+    },
+    "Users": {
+      "type": "array",
+      "title": "Users",
+      "items": "User"
+    }
+  }
+}
